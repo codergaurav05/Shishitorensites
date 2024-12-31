@@ -40,16 +40,72 @@
         .neon-text {
             font-size: 40px;
             color: #FF0000;
-            text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
-            animation: glow 1.5s ease-in-out infinite alternate;
+            text-shadow: 
+                0 0 5px #FF0000, 
+                0 0 10px #FF0000, 
+                0 0 20px #FF0000, 
+                0 0 30px #FF0000, 
+                0 0 40px #FF0000, 
+                0 0 50px #FF0000, 
+                0 0 75px #FF0000;
+            animation: glow 1.5s ease-in-out infinite alternate, flame 0.5s ease-in-out infinite;
             margin-bottom: 40px;
         }
         @keyframes glow {
             from {
-                text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
+                text-shadow: 
+                    0 0 5px #FF0000, 
+                    0 0 10px #FF0000, 
+                    0 0 20px #FF0000, 
+                    0 0 30px #FF0000, 
+                    0 0 40px #FF0000, 
+                    0 0 50px #FF0000, 
+                    0 0 75px #FF0000;
             }
             to {
-                text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000;
+                text-shadow: 
+                    0 0 20px #FF0000, 
+                    0 0 30px #FF0000, 
+                    0 0 40px #FF0000, 
+                    0 0 50px #FF0000, 
+                    0 0 60px #FF0000, 
+                    0 0 70px #FF0000, 
+                    0 0 100px #FF0000;
+            }
+        }
+        @keyframes flame {
+            0% {
+                text-shadow: 
+                    0 0 10px #FF4500, 
+                    0 0 20px #FF4500, 
+                    0 0 30px #FF4500, 
+                    0 0 40px #FF4500, 
+                    0 0 50px #FF4500, 
+                    0 0 60px #FF4500, 
+                    0 0 70px #FF4500, 
+                    0 0 80px #FF4500;
+            }
+            50% {
+                text-shadow: 
+                    0 0 20px #FF6347, 
+                    0 0 30px #FF6347, 
+                    0 0 40px #FF6347, 
+                    0 0 50px #FF6347, 
+                    0 0 60px #FF6347, 
+                    0 0 70px #FF6347, 
+                    0 0 80px #FF6347, 
+                    0 0 90px #FF6347;
+            }
+            100% {
+                text-shadow: 
+                    0 0 30px #FF0000, 
+                    0 0 40px #FF0000, 
+                    0 0 50px #FF0000, 
+                    0 0 60px #FF0000, 
+                    0 0 70px #FF0000, 
+                    0 0 80px #FF0000, 
+                    0 0 90px #FF0000, 
+                    0 0 100px #FF0000;
             }
         }
         @media (max-width: 600px) {
