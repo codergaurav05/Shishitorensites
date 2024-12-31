@@ -64,7 +64,8 @@
         .snowflake {
             position: absolute;
             top: -10px;
-            background: white;
+            background-color: red; /* Change color */
+            box-shadow: 0 0 5px red; /* Add glowing effect */
             border-radius: 50%;
             opacity: 0.8;
             animation: fall linear infinite;
@@ -92,7 +93,7 @@
             const snowflake = document.createElement('div');
             snowflake.classList.add('snowflake');
             snowflake.style.left = Math.random() * window.innerWidth + 'px';
-            snowflake.style.width = snowflake.style.height = Math.random() * 10 + 5 + 'px';
+            snowflake.style.width = snowflake.style.height = Math.random() * 5 + 5 + 'px'; // Decrease size
             snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
             document.body.appendChild(snowflake);
 
@@ -101,7 +102,7 @@
             }, Math.random() * 3000 + 2000);
         }
 
-        setInterval(createSnowflake, 100);
+        setInterval(createSnowflake, 500); // Increase interval to decrease amount
     </script>
 </body>
 </html>
