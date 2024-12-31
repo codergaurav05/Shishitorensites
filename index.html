@@ -23,8 +23,8 @@
         }
         .button-container button {
             margin: 10px;
-            padding: 15px 30px;
-            font-size: 16px;
+            padding: 20px 40px;
+            font-size: 18px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -34,13 +34,30 @@
         }
         .button-container button:hover {
             background-color: #555;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
         .neon-text {
             font-size: 40px;
             color: #FF0000;
             text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
+            animation: glow 1.5s ease-in-out infinite alternate;
             margin-bottom: 40px;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000;
+            }
+        }
+        @media (max-width: 600px) {
+            .button-container button {
+                width: 100%;
+                margin: 5px 0;
+                padding: 15px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
