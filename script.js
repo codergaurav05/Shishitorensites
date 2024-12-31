@@ -1,78 +1,27 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    background-color: #2a2a2a;
-    margin: 0;
+// Function to navigate to a provided URL
+function navigateTo(url) {
+    window.location.href = url;
 }
 
-.title-container {
-    position: absolute;
-    top: 20px;
-    text-align: center;
-}
-
-.neon-text {
-    font-size: 48px;
-    color: #ff0000;
-    text-shadow: 
-        0 0 5px #ff0000,
-        0 0 10px #ff0000,
-        0 0 15px #ff0000,
-        0 0 20px #ff0000,
-        0 0 25px #ff0000,
-        0 0 30px #ff0000,
-        0 0 35px #ff0000;
-}
-
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-gap: 20px;
-    margin-bottom: 40px;
-}
-
-.game-button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px #999;
-    text-align: center;
-}
-
-.game-button:hover {
-    background-color: #666;
-}
-
-.game-button:active {
-    background-color: #666;
-    box-shadow: 0 2px #666;
-    transform: translateY(2px);
-}
-
-/* Specific positions for buttons */
-.button-container > :nth-child(4) {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.button-container > :nth-child(5) {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.button-container > :nth-child(6) {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.button-container > :nth-child(7) {
-    grid-column: 2;
-    grid-row: 3;
-}
+// Add event listeners to each button
+document.getElementById('button1').addEventListener('click', function() {
+    navigateTo('https://link1.com');
+});
+document.getElementById('button2').addEventListener('click', function() {
+    navigateTo('https://link2.com');
+});
+document.getElementById('button3').addEventListener('click', function() {
+    navigateTo('https://link3.com');
+});
+document.getElementById('button4').addEventListener('click', function() {
+    navigateTo('https://link4.com');
+});
+document.getElementById('button5').addEventListener('click', function() {
+    navigateTo('https://link5.com');
+});
+document.getElementById('button6').addEventListener('click', function() {
+    navigateTo('https://link6.com');
+});
+document.getElementById('button7').addEventListener('click', function() {
+    navigateTo('https://link7.com');
+});
